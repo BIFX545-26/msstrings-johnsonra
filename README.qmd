@@ -1,0 +1,27 @@
+---
+title: "MSstrings"
+format: gfm
+editor: visual
+---
+
+MSstrings is a package that will read in Spectronaut-formatted peptides with or without protein modifications and display them nicely.
+
+## Installation
+
+MSstrings can be installed from GitHub using the following command:
+
+```{r}
+#| eval: false
+devtools::install_github('BIFX545-26/msstrings-johnsonra')
+```
+
+## Example
+
+This package comes with a sample data set, which we import and display below.
+
+```{r}
+library(MSstrings)
+
+data("MSfrags")
+parse_mods(MSfrags)
+```
